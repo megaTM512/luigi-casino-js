@@ -145,6 +145,7 @@ function updateCenterButton(){
 
 
 $(".centerButton").click(function() { //Klick auf Hauptknopf, Quasi die Spielelogik
+if(gamestate==="trading") return;
   if(!mute){  //Sound
     var ding = new Audio("sfx/ding.mp3");
     ding.play();
