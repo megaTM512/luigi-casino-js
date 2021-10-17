@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Luigis Casino</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/5965b3c871.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+  <div class="game">
+
+    <div class="enemyBoard">
+      <button class="card"><img src="img/cards/CardBack.png" alt="CardBack" class="cardImg"></button>
+      <button class="card"><img src="img/cards/CardBack.png" alt="CardBack" class="cardImg"></button>
+      <button class="card"><img src="img/cards/CardBack.png" alt="CardBack" class="cardImg"></button>
+      <button class="card"><img src="img/cards/CardBack.png" alt="CardBack" class="cardImg"></button>
+      <button class="card"><img src="img/cards/CardBack.png" alt="CardBack" class="cardImg"></button>
+    </div>
+
+    <div class="buttonArea">
+      <span id="coinGainText">+10</span>
+      <i class="fas fa-volume-mute musicButton"></i>
+      <img src="img/coin.png" class="coinImg" alt="coins">
+      <span id="coinCount">10</span>
+      <button class="centerButton"><img src="img/button_hold.png" alt=""></button>
+      <span>You bet: </span>
+      <input class="coinInput" type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+      <img src="img/scoreStar.png" class="starImg" alt="stars">
+      <span id="starCount">0</span>
+    </div>
+    <div id="winText">YOU WIN!</div>
+
+    <div class="ownedBoard">
+      <button class="card" ><img src="img/cards/CardBack.png" alt="CardBack" class="cardImg" id="p1"></button>
+      <button class="card" ><img src="img/cards/CardBack.png" alt="CardBack" class="cardImg" id="p2"></button>
+      <button class="card" ><img src="img/cards/CardBack.png" alt="CardBack" class="cardImg" id="p3"></button>
+      <button class="card" ><img src="img/cards/CardBack.png" alt="CardBack" class="cardImg" id="p4"></button>
+      <button class="card" ><img src="img/cards/CardBack.png" alt="CardBack" class="cardImg" id="p5"></button>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
+</body>
+
+</html>
